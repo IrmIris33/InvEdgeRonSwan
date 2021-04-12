@@ -1,42 +1,58 @@
-import React, { useContext, useState } from 'react';
-import VoteContext from "./VoteContext";
-import "./Quote.css";
+import React, { useState } from 'react';
+import "../CSS/Quote.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UpVote from "./Images/UpVote.png";
-import DownVote from "./Images/DownVote.png";
+import {increment, decrement} from "../Redux/Action";
+import { connect } from 'react-redux';
+import UpVote from "../Images/UpVote.png";
+import DownVote from "../Images/DownVote.png";
 
 
 //Create a class component to create state to store the data
-function Quote() {
+function Quote(props) {
+
+    const { increment, decrement, data } = props;
     const [state, setData] = useState({
             count: 0,
             total: 0,
     });
-    const {voteData} = useContext(VoteContext);
-    const {setVoteData} = useContext(VoteContext)
 
 //Use the increment function to set state
-    const increment = () => {
+    const countUpVote = (dispatch) => {
         setData({
             count: state.count + 1
         });
+        increment();
     }
-    const decrement = () => {
+    const countDownVote = () => {
         setData({
             count: state.count - 1
         })
+        decrement();
     }
         return (
-            <div className="container">
+            <div>
                 <div className="row">
-                        <button onClick={increment}>
-                        <img className="UpVote" src={UpVote} alt="Thumbs up"/></button>&nbsp;
+                        <button onClick={countUpVote}>
+                        <img className="UpVote" src={UpVote} alt="Thumbs up"/></button>&nbsp;&nbsp;
 
-                        <span>{state.count}</span>&nbsp;
+                        <span>{state.count}</span>&nbsp;&nbsp;
 
-                        <button onClick={decrement}><img className="DownVote" src={DownVote} alt="Thumbs down"/> </button>
+                        <button onClick={countDownVote}><img className="icon" src={DownVote} alt="Thumbs down"/></button>
                 </div>
-           </div>
+                <span className='quote-text'>{data} </span>
+            </div>
         )
 }
-export default Quote;
+function mapStateToProps(state) {
+    return {
+        counter: state
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment: () => dispatch(increment()),
+        decrement: () => dispatch(decrement())
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Quote);
+

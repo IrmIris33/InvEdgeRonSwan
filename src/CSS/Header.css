@@ -1,0 +1,28 @@
+.header {
+    margin:auto;
+    padding: 60px;
+    float: right;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    display: inline;
+  }
+
+.title {
+    font-weight: bold;
+    font-size: medium;
+    
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: large;
+    padding-left: 3px;
+}
+
+.total-votes {
+    font-style: italic;
+    font-size: large;
+    display: flex;
+
+}
