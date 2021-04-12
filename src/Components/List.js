@@ -1,5 +1,9 @@
 import React from 'react';
 import Quote from "./Quote";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./List.css";
+
+
 
 const List = (props) => {
   const { quotes } = props;
@@ -9,7 +13,7 @@ const List = (props) => {
     <ul>
       {quotes.map((quote) => {
         return (
-          <div className='list'>
+          <div className='container-list'>
             <Quote /> <span className='repo-text'>{quote} </span>
           </div>
         );

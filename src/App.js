@@ -28,18 +28,16 @@ function App() {
 
   return (
     <div className='App'>
-      <VoteContext.Provider value = {{voteData, setVoteData}}>
-        <Header />
-          <div className='repo-container'>
-            <ListLoading isLoading={appState.loading} quotes={appState.quotes} />
-          </div>
-      </VoteContext.Provider>
+        <VoteContext.Provider value = {{voteData, setVoteData}}>
+          <Header />
+            <div className='repo-container'>
+              <ListLoading isLoading={appState.loading} quotes={appState.quotes} />
+            </div>
+        </VoteContext.Provider>
     </div>
   );
 }
 export default App;
-
-
 
 
 

@@ -1,54 +1,42 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useContext, useState } from 'react';
+import VoteContext from "./VoteContext";
 import "./Quote.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import UpVote from "./Images/UpVote.png";
 import DownVote from "./Images/DownVote.png";
 
-//Create a class component to create state to store the data
-class Counter extends Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 0,
-            total: 0
-        }
 
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
-    }
+//Create a class component to create state to store the data
+function Quote() {
+    const [state, setData] = useState({
+            count: 0,
+            total: 0,
+    });
+    const {voteData} = useContext(VoteContext);
+    const {setVoteData} = useContext(VoteContext)
 
 //Use the increment function to set state
-    increment = () => {
-        this.setState({
-            count: this.state.count + 1 
+    const increment = () => {
+        setData({
+            count: state.count + 1
+        });
+    }
+    const decrement = () => {
+        setData({
+            count: state.count - 1
         })
     }
-
-    decrement = () => {
-        this.setState({
-            count: this.state.count - 1
-        })
-    }
-
-    total = () => {
-        return this.increment + this.decrement
-    }
-
-    render() {
         return (
             <div className="container">
                 <div className="row">
-                    <button onClick={this.increment}> 
-                    <img className="UpVote" src={UpVote} alt="Thumbs up"/></button>
+                        <button onClick={increment}>
+                        <img className="UpVote" src={UpVote} alt="Thumbs up"/></button>&nbsp;
 
-                    <span>{this.state.count}</span>
-            
-                    <button onClick={this.decrement}><img className="DownVote" src={DownVote} alt="Thumbs down"/> </button>
+                        <span>{state.count}</span>&nbsp;
 
-                </div>    
+                        <button onClick={decrement}><img className="DownVote" src={DownVote} alt="Thumbs down"/> </button>
+                </div>
            </div>
         )
-    }
 }
-
-export default Counter;
+export default Quote;
