@@ -1,0 +1,35 @@
+
+.container {
+    width: auto;
+    height: auto;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    
+  }
+  
+  .button {
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+    
+  }
+  
+  .voting {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .thumbup {
+    background-color: #073525;
+    border: 1px solid #073525;
+    margin-right: 10px;
+  }
+  
+  .thumbdown {
+    background-color: #FF0026;
+    border: 1px solid #FF0026;
+  }

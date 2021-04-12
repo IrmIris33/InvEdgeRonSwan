@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import List from './components/List';
-import withListLoading from './components/withListLoading';
+import "./App.css";
+import List from "./Components/List";
+import WithListLoading from "./Components/WithListLoading";
+import Header from "./Components/Header";
+import VoteContext from "./Components/VoteContext";
 
 function App() {
-  const ListLoading = withListLoading(List);
+  const ListLoading = WithListLoading(List);
   const [appState, setAppState] = useState({
     loading: false,
     quotes: null,
+  });
+
+  const [voteData, setVoteData] = useState({
+    total: 0,
   });
 
   useEffect(() => {
@@ -19,16 +25,21 @@ function App() {
         setAppState({ loading: false, quotes: quotes });
       });
   }, [setAppState]);
-  
+
   return (
     <div className='App'>
-      <div className='container'>
-        <h1>My Repositories</h1>
-      </div>
-      <div className='repo-container'>
-        <ListLoading isLoading={appState.loading} quotes={appState.quotes} />
-      </div>
+      <VoteContext.Provider value = {{voteData, setVoteData}}>
+        <Header />
+          <div className='repo-container'>
+            <ListLoading isLoading={appState.loading} quotes={appState.quotes} />
+          </div>
+      </VoteContext.Provider>
     </div>
   );
 }
 export default App;
+
+
+
+
+
