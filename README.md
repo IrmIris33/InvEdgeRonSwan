@@ -1,4 +1,4 @@
-# Ron Swanson Quote Voter
+# Ron Swanson Quote Voter<br>
 
 The Ron Swanson Quote Voter is a list of quotes from Parks and Recreation for users to vote on their favorite quotes by clicking on the thumbs up and thumbs down buttons. A count of the votes is captured in the total votes section on the header. The vote data is stored locally. When page is refreshed, a new set of quotes is generated in a random order, and a new total vote count is calculated. 
 
