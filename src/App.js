@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `https://ron-swanson-quotes.herokuapp.com/v2/quotes/20`;
+    const apiUrl = `https://ron-swanson-quotes.herokuapp.com/v2/quotes/50`;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((_quotes) => {
