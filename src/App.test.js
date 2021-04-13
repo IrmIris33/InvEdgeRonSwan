@@ -8,11 +8,11 @@ test('renders learn react link', () => {
 });
 
 it("renders without crashing", () => {
-  shallow(<App />);
+  shallow(<Quote/>);
 });
 
 it("renders Account header", () => {
-  const wrapper = shallow(<App />);
-  const welcome = <h1>Display Active Users Account Details</h1>;
+  const wrapper = shallow(<Quote />);
+  const increment = <h1>Display Active Users Account Details</h1>;
   expect(wrapper.contains(welcome)).toEqual(true);
 });

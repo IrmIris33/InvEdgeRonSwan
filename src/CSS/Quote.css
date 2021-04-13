@@ -1,24 +1,25 @@
-
-.container-row {
+.row {
     width: auto;
     height: auto;
   }
   
   .button {
-    width: 18px;
-    height: 18px;
-    
+    width: 40px;
+    height: 40px;
   }
   
   .UpVote {
-   
     width: 20px;
     height: 20px;
+    padding: 3px;
   }
   
   .DownVote {
-   
     width: 20px;
     height: 20px;
+    padding: 3px;
     
+  }
+  .span.quote-text {
+    flex-wrap: nowrap;
   }

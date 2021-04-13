@@ -2,7 +2,7 @@ import React from 'react';
 import Quote from "./Quote";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../CSS/List.css";
-import { Card } from 'react-bootstrap';
+import { ListGroup, ListGroupItem } from 'react-bootstrap';
 
 
 const List = (props) => {
@@ -14,9 +14,11 @@ const List = (props) => {
       {quotes.map((quote) => {
         return (
           <div className='container-list'>
-            <Card>
-                <Quote id= {quote.id} data = {quote.data}/>
-            </Card>
+            <ListGroup>
+              <ListGroupItem>
+                  <Quote id= {quote.id} data = {quote.data}/>
+              </ListGroupItem>
+            </ListGroup>
           </div>
         );
       })}

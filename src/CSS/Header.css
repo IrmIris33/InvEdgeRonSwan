@@ -1,28 +1,25 @@
 .header {
     margin:auto;
-    padding: 60px;
+    padding: 20px;
     float: right;
-    background: #1abc9c;
-    color: white;
     font-size: 30px;
     display: inline;
   }
 
 .title {
     font-weight: bold;
-    font-size: medium;
+    font-size: x-large;
+    padding-left: 20px;
     
 }
 
 .subtitle {
     font-style: italic;
     font-size: large;
-    padding-left: 3px;
 }
 
 .total-votes {
-    font-style: italic;
+    font-style: normal;
     font-size: large;
-    display: flex;
 
 }
