@@ -1,12 +1,15 @@
-import { render } from "@testing-library/react";
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, fireEvent } from '@testing-library/react';
 import Quote from "../Components/Quote";
-import Button from "../Components/Quote";
 
-it("should render initial layout", () => {
-    // when
-    const Quote = render(<Quote />);
-    // then
-    expect(Quote.getElements(<button></button>)).toMatchSnapshot();
+it("render increment", () => {
+    const {countUpVote} = render(<Quote/>)
+    fireEvent.onclick(<button></button>)
+    expect(countUpVote).tobeTruthy();
+});
+
+it("render decrement", () => {
+    const {countDownVote} = render(<Quote/>)
+    fireEvent.onclick(<button></button>)
+    expect(countDownVote).tobeTruthy();
 });
