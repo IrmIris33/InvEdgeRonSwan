@@ -13,9 +13,9 @@ const List = (props) => {
     <div>
       {quotes.map((quote) => {
         return (
-          <div className='container-list'>
+          <div>
             <ListGroup>
-              <ListGroupItem>
+              <ListGroupItem variant="dark">
                   <Quote id= {quote.id} data = {quote.data}/>
               </ListGroupItem>
             </ListGroup>

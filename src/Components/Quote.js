@@ -35,19 +35,19 @@ function Quote(props) {
         return (
             <div id = {id}>
                 <div className="row">
-                        <button onClick={countUpVote}>
+                        <button className="button" onClick={countUpVote}>
                         <img className="UpVote" src={UpVote} alt="Thumbs up"/></button>&nbsp;&nbsp;
 
                         <span>{state.count}</span>&nbsp;&nbsp;
 
-                        <button onClick={countDownVote}><img className="icon" src={DownVote} alt="Thumbs down"/></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button className="button" onClick={countDownVote}><img className="icon" src={DownVote} alt="Thumbs down"/></button>&nbsp;&nbsp;&nbsp;&nbsp;
                 
                         <span className="quote-text">{data} </span>         
                 </div>
             </div>
         )
 }
-//Created a new function to map to props in order to capture totals when increment and decrement are clicked. Reviewed tutorial in order to implement (ADD SOURCE HERE)
+//Created a new function to map to props in order to capture totals when increment and decrement are clicked. Referred to a tutorial, source in Readme.md file.
 function mapStateToProps(state) {
     return {
         counter: state
