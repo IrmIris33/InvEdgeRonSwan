@@ -1,34 +1,34 @@
 # Ron Swanson Quote Voter<br>
 
-The Ron Swanson Quote Voter is a list of quotes from Parks and Recreation for users to vote on their favorite quotes by clicking on the thumbs up and thumbs down buttons. A count of the votes is captured in the total votes section on the header. The vote data is stored locally. When page is refreshed, a new set of quotes is generated in a random order, and a new total vote count is calculated. 
+The Ron Swanson Quote Voter is a list of quotes from Parks and Recreation for users to vote on their favorite quotes by clicking on the thumbs up and thumbs down buttons. A count of the votes is captured in the total votes section in the header. The vote data is stored locally. When the page is refreshed, a new set of quotes is generated in a random order, and a new total vote count is calculated. 
 
-# Ron Swanson API
+# Ron Swanson API<br>
 
-https://ron-swanson-quotes.herokuapp.com/v2/quotes/50
+https://ron-swanson-quotes.herokuapp.com/v2/quotes/50<br>
 (will display 50 quotes)
 
-# Built with:
-React 
-React Bootstrap
-React Redux
+# Built with:<br>
+React<br>
+React Bootstrap<br>
+React Redux<br>
  
 # References/Resource
 
-Consuming REST APIs In React With Fetch And Axios:
-https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/
-https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+Consuming REST APIs In React With Fetch And Axios:<br>
+https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/<br>
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch<br>
 
 # React Bootstrap for Header and List of Quotes:
 
-https://react-bootstrap.github.io/components
-https://reactjs.org/
-https://developer.mozilla.org/en-US/
+https://react-bootstrap.github.io/components/<br>
+https://reactjs.org/<br>
+https://developer.mozilla.org/en-US/<br>
 
 # Unit Testing with Jest and Enzyme:
 
-A Practical Guide To Testing React Applications With Jest:
-https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/
-https://css-tricks.com/testing-react-hooks-with-enzyme-and-react-testing-library/
+A Practical Guide To Testing React Applications With Jest:<br>
+https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/<br>
+https://css-tricks.com/testing-react-hooks-with-enzyme-and-react-testing-library/<br>
 
 
 
