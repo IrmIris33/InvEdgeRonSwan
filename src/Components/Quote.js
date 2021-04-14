@@ -16,7 +16,7 @@ function Quote(props) {
             total: 0,
     });
 
-//Use the increment/decrement function to count the votes
+//Use event handlers to the increment/decrement the votes
     const countUpVote = (dispatch) => {
         setData({
             count: state.count + 1
@@ -30,7 +30,7 @@ function Quote(props) {
         decrement();
     }
 
-    //Created buttons with an onClick event to capture the votes when clicked.
+    //Create buttons with an onClick event to capture the votes when clicked.
     //Integrated the data (quotes) with "data" prop.
         return (
             <div id = {id}>
@@ -47,7 +47,7 @@ function Quote(props) {
             </div>
         )
 }
-//Created a new function to map to props in order to capture totals when increment and decrement are clicked. Referred to a tutorial, source in Readme.md file.
+//Create a new function to map to props in order to capture totals when increment and decrement are clicked. Referred to a tutorial, source in Readme.md file.
 function mapStateToProps(state) {
     return {
         counter: state

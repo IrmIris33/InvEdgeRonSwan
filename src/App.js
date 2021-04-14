@@ -11,6 +11,8 @@ function App() {
     quotes: null,
   });
 
+  //Implement useEffect hook to fetch the Ron Swanson API via a url.
+  //Created a new variable quotes to map a new function with parameters of an obj and i, which will return an id and data from the quotes API.
   useEffect(() => {
     setAppState({ loading: true });
     const apiUrl = `https://ron-swanson-quotes.herokuapp.com/v2/quotes/50`;

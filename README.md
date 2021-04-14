@@ -30,7 +30,6 @@ https://react-redux.js.org/<br>
 React The Complete Guide Course by Academind by Maximilian Schwarzmüller:<br>
 https://udemy.com/
 
-
 # Unit Testing with Jest and Enzyme:
 
 A Practical Guide To Testing React Applications With Jest:<br>
