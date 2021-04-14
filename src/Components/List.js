@@ -7,7 +7,7 @@ import { ListGroup, ListGroupItem } from 'react-bootstrap';
 
 const List = (props) => {
   const { quotes } = props;
-  if (!quotes || quotes.length === 0) return <p>No quotes, sorry</p>;
+  if (!quotes || quotes.length === 0) return <p>No quotes available.</p>;
 
   return (
     <div>

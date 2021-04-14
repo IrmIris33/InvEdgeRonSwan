@@ -19,17 +19,24 @@ Consuming REST APIs In React With Fetch And Axios:<br>
 https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/<br>
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch<br>
 
-# React Bootstrap for Header and List of Quotes:
+# React Bootstrap for Header List of Quotes:
 
 https://react-bootstrap.github.io/components/<br>
 https://reactjs.org/<br>
 https://developer.mozilla.org/en-US/<br>
+
+# React Redux:
+https://react-redux.js.org/<br>
+React The Complete Guide Course by Academind by Maximilian Schwarzmüller:<br>
+https://udemy.com/
+
 
 # Unit Testing with Jest and Enzyme:
 
 A Practical Guide To Testing React Applications With Jest:<br>
 https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/<br>
 https://css-tricks.com/testing-react-hooks-with-enzyme-and-react-testing-library/<br>
+https://dzone.com/articles/unit-testing-in-reactjs-using-jest-and-enzyme<br>
 
 
 
