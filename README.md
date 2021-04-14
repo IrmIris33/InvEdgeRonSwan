@@ -28,7 +28,8 @@ https://developer.mozilla.org/en-US/<br>
 # React Redux:
 https://react-redux.js.org/<br>
 React The Complete Guide Course by Academind by Maximilian Schwarzmüller:<br>
-https://udemy.com/
+https://udemy.com/<br>
+https://www.robinwieruch.de/javascript-reducer
 
 # Unit Testing with Jest and Enzyme:
 

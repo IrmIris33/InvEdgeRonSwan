@@ -21,12 +21,14 @@ function Quote(props) {
         setData({
             count: state.count + 1
         });
+        //Redux action
         increment();
     }
     const countDownVote = () => {
         setData({
             count: state.count - 1
         })
+        //Redux action
         decrement();
     }
 
